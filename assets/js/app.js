@@ -94,8 +94,18 @@
       else if (action === 'save') save(!!(toggle && toggle.checked));
     });
     $$('[data-cookie-open]').forEach((b) => b.addEventListener('click', () => open(true)));
-    // sur l’accueil, le bandeau attend que le visiteur ait vu l’appareil
-    if (!consent) setTimeout(() => open(false), PAGE === 'index' ? 3800 : 900);
+    // sur l’accueil, le bandeau ne cache pas le héros : il arrive une fois l’appareil
+    // déclenché (le visiteur a quitté le haut de page), ou au bout de 15 s
+    if (!consent) {
+      if (PAGE !== 'index') setTimeout(() => open(false), 900);
+      else {
+        let shown = false;
+        const show = () => { if (shown || readConsent()) return; shown = true; window.removeEventListener('scroll', onScroll); setTimeout(() => open(false), 1200); };
+        const onScroll = () => { if (window.scrollY > window.innerHeight * 0.5) show(); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        setTimeout(show, 15000);
+      }
+    }
   });
 
   // Clics suivis (boutons d’action, téléphone, WhatsApp, e-mail, agenda…)

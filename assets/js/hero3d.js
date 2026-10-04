@@ -37,7 +37,7 @@ async function start() {
     return;
   }
   try {
-    const { createCamera3D } = await import('./camera3d.js?v=3c81983609');
+    const { createCamera3D } = await import('./camera3d.js?v=b2d93d5450');
     const base = d.dataset.base || '';
     const api = await createCamera3D(stage, {
       lcdSrc: base + '/assets/img/plateau-640.webp',
