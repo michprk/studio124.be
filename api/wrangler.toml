@@ -1,0 +1,17 @@
+# API du formulaire Studio 124 — Cloudflare Workers
+# Déploiement : voir api/README.md
+name = "studio124-contact"
+main = "contact-worker.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+# Plusieurs origines possibles, séparées par des virgules
+ALLOWED_ORIGIN = "https://michprk.github.io,https://studio124.be,https://www.studio124.be"
+STUDIO_EMAIL = "ceicrpasbl@gmail.com"
+FROM_EMAIL = "Studio 124 <site@studio124.be>"
+
+# Limite anti-spam par adresse IP (facultatif) :
+# npx wrangler kv namespace create RATE_LIMIT  → coller l’identifiant ci-dessous
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "à-remplacer"

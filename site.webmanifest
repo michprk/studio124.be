@@ -1,0 +1,16 @@
+{
+  "name": "Studio 124 — Studio photo & vidéo à Bruxelles",
+  "short_name": "Studio 124",
+  "description": "200 m² équipés à deux pas de la gare du Nord, ouverts 24 h/24. Photo, vidéo, podcast : la lumière, les fonds et l’équipe sont inclus.",
+  "lang": "fr-BE",
+  "start_url": "/studio124.be/",
+  "scope": "/studio124.be/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    { "src": "/studio124.be/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/studio124.be/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/studio124.be/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

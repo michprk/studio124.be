@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="fr-BE" data-base="/studio124.be" data-api="" data-ga="" data-page="index">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio 124 — Studio photo &amp; vidéo à louer à Bruxelles, 24 h/24</title>
+<meta name="description" content="Location de studio photo et vidéo de 200 m² à Schaerbeek, à deux pas de la gare du Nord : cyclorama, 17 couleurs de fond, éclairage pro et staff inclus. Dès 55 €/h, ouvert 24 h/24, 7 j/7. Shooting et production vidéo dès 250 €/h.">
+<!-- Maquette de démonstration : non indexée tant que le studio n’a pas validé le site -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://michprk.github.io/studio124.be/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:site_name" content="Studio 124">
+<meta property="og:title" content="Studio 124 — Le studio qui ne dort jamais">
+<meta property="og:description" content="200 m² équipés à Bruxelles, ouverts 24 h/24. Photo, vidéo, podcast : la lumière, les fonds et l’équipe sont inclus. Dès 55 €/h.">
+<meta property="og:url" content="https://michprk.github.io/studio124.be/">
+<meta property="og:image" content="https://michprk.github.io/studio124.be/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L’appareil photo Studio 124 sur fond noir et le titre « Le studio qui ne dort jamais ».">
+<meta name="twitter:card" content="summary_large_image">
+<!--#include head-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BHzmaxSLOPJ4bxA1teFNFVyRPJM2dd7IsWC4Xd9y/s0=' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.workers.dev; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#050505">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="/studio124.be/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/studio124.be/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/studio124.be/apple-touch-icon.png">
+<link rel="manifest" href="/studio124.be/site.webmanifest">
+<link rel="preload" href="/studio124.be/assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/studio124.be/assets/fonts/inria-serif-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/studio124.be/assets/css/main.css?v=3c81983609">
+<script>(function(){var d=document.documentElement,l=location,R=false,m;if(l.protocol==='http:'&&!/^(localhost|127\.0\.0\.1|\[::1\])$/.test(l.hostname)){l.replace('https:'+l.href.slice(5));return}d.classList.add('js');try{m=(l.search.match(/[?&]motion=(full|reduce)/)||[])[1];if(m)localStorage.setItem('s124_motion',m);R=localStorage.getItem('s124_motion')==='reduce'}catch(e){}if(R)d.classList.add('reduced');setTimeout(function(){if(!d.classList.contains('js-ready'))d.classList.remove('js')},6000)})();</script>
+<script src="/studio124.be/assets/vendor/lenis.min.js?v=3c81983609" defer></script>
+<script src="/studio124.be/assets/js/sound.js?v=3c81983609" defer></script>
+<script src="/studio124.be/assets/js/app.js?v=3c81983609" defer></script>
+<!--/include-->
+<link rel="modulepreload" href="/studio124.be/assets/vendor/three.module.min.js">
+<link rel="modulepreload" href="/studio124.be/assets/js/camera3d.js?v=3c81983609">
+<script type="module" src="/studio124.be/assets/js/hero3d.js?v=3c81983609"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://michprk.github.io/studio124.be/#studio",
+      "name": "Studio 124",
+      "alternateName": "Studio124",
+      "legalName": "Centre européen et international de Communication et de Relation publique (CEICRP) ASBL",
+      "taxID": "BE0435720436",
+      "description": "Studio de location et de production audiovisuelle de 200 m² à Schaerbeek : cyclorama, fonds papier, éclairage professionnel, loge et staff inclus. Shooting photo, production vidéo, podcast et communication visuelle.",
+      "url": "https://michprk.github.io/studio124.be/",
+      "image": ["https://michprk.github.io/studio124.be/og.jpg", "https://michprk.github.io/studio124.be/assets/img/plateau-1600.webp"],
+      "logo": "https://michprk.github.io/studio124.be/icon-512.png",
+      "telephone": "+32472040501",
+      "email": "ceicrpasbl@gmail.com",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Virement bancaire",
+      "address": { "@type": "PostalAddress", "streetAddress": "Rue Verte 124", "postalCode": "1030", "addressLocality": "Schaerbeek", "addressRegion": "Bruxelles-Capitale", "addressCountry": "BE" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 50.8618, "longitude": 4.3625 },
+      "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59" }],
+      "areaServed": "Bruxelles",
+      "sameAs": ["https://www.instagram.com/studio124.be/", "https://www.tiktok.com/@ceicrp_asbl", "https://www.facebook.com/profile.php?id=100065029682880"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Formules Studio 124",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Location du studio (matériel inclus)", "priceSpecification": { "@type": "UnitPriceSpecification", "price": 55, "priceCurrency": "EUR", "unitCode": "HUR", "description": "Dès 55 €/h (semaine 9 h – 12 h), 65 €/h en semaine, 75 €/h le week-end, minimum 2 h" } },
+          { "@type": "Offer", "name": "Shooting photo avec photographe", "priceSpecification": { "@type": "UnitPriceSpecification", "price": 250, "priceCurrency": "EUR", "unitCode": "HUR" } },
+          { "@type": "Offer", "name": "Production vidéo au studio", "priceSpecification": { "@type": "UnitPriceSpecification", "price": 250, "priceCurrency": "EUR", "unitCode": "HUR" } },
+          { "@type": "Offer", "name": "Communication visuelle (affiches, flyers, visuels, logos)", "description": "Sur devis" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://michprk.github.io/studio124.be/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Puis-je louer le studio sans photographe ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. La location comprend le plateau, l’éclairage, les fonds et la loge ; le staff aide à installer le matériel et à changer les fonds. Une assistance lumière dédiée est proposée en option (35 €/h)." } },
+        { "@type": "Question", "name": "Quels sont les horaires du studio ?", "acceptedAnswer": { "@type": "Answer", "text": "Le studio est ouvert 24 h/24 et 7 j/7, uniquement sur rendez-vous. Pour une séance entre 20 h et 8 h, prévenez au moins 24 h à l’avance." } },
+        { "@type": "Question", "name": "Comment réserver et payer ?", "acceptedAnswer": { "@type": "Answer", "text": "Envoyez votre demande ; une fois le créneau validé, réglez par virement dans les 24 h. La réservation est confirmée par e-mail à réception du paiement." } },
+        { "@type": "Question", "name": "Puis-je annuler une réservation ?", "acceptedAnswer": { "@type": "Answer", "text": "Une réservation confirmée est ferme et définitive : elle n’est ni annulable ni remboursable." } },
+        { "@type": "Question", "name": "Où se garer ?", "acceptedAnswer": { "@type": "Answer", "text": "Le studio est au 124 rue Verte, à deux pas de la gare du Nord. Parking sécurisé : Interparking, rue de Quatrecht 38." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!--#include sprite-->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 214 132"><path fill="currentColor" fill-rule="evenodd" d="M91.3 4L100.8 4L103.5 4.2L109.4 5.2L113.4 6.2L118.6 8.2L122.6 10.2L125.6 12.2L128.8 15L130.8 17.2L132.8 20.1L134.6 23.9L135.8 27.2L136.6 31.4L136.8 34.9L136.8 38.2L137 38.7L137.4 38.9L137.8 38.7L164.2 7.4L165.4 6.1L166.5 5.4L167.8 5.1L194.1 5L194.9 5.2L195.3 5.8L195.5 6.6L195.5 62.1L195.8 62.6L196.5 62.9L208.2 62.9L208.8 63L209.1 63.4L209.2 64L209.2 87.6L208.8 88.1L208.2 88.2L196.8 88.2L196.2 88.2L195.9 88.6L195.6 89.6L195.7 107.4L195.5 108.4L195.1 108.7L194.2 108.9L166.5 108.9L165.2 109.1L165 109.5L165 110.4L165 127.2L164.9 128.2L164.6 128.6L163.9 128.8L139.2 128.8L138.5 128.3L138.3 127.4L138.3 110.6L138.1 109.4L137.5 109L27.8 109L27.1 108.8L26.8 108.5L26.7 108L26.8 50.6L26.6 49.6L26.1 49.2L25.2 49L3.8 49.1L3.1 48.9L2.8 48.5L2.8 29.6L3 28.2L3.8 27.9L12.8 26.7L17 25.7L19.6 24.8L21.8 23.8L24.9 21.8L27 19.9L28.8 17.9L30.7 14.8L31.8 11.9L32.6 9L33.1 6.1L33.3 5.6L33.8 5.3L34.6 5.1L56.1 5.1L56.6 5.2L57 5.6L57.1 6.5L57 20.2L57.1 20.8L57.5 21L58.6 20.2L59.2 19.1L61 17L64 14L67.6 11.2L71 9.1L75.5 7.1L78.1 6.2L81.9 5.2L88.2 4.2L91.3 4ZM41.7 11.5L44 11.4L47.5 12.2L49 13.2L50.6 14.9L51.6 16.7L51.8 17.5L52.1 19.6L51.9 21.8L51.6 23.1L50.8 24.8L48.9 26.8L47.4 27.6L44.3 28.4L42.5 28.5L39.5 27.9L38.6 27.6L37.2 26.9L36.1 25.9L35.1 24.6L34.1 21.9L33.9 19.8L34.1 17.8L35.2 15.1L37 13.2L38.5 12.2L41.7 11.5ZM42 14.4L43.8 14.4L46.6 15.1L47.9 16L48.8 17L49.6 19L49.6 21L48.7 23L47.8 23.9L46.6 24.7L44.1 25.4L41.9 25.4L39.2 24.7L38 23.8L37.1 22.7L36.5 20.8L36.5 19.1L37.2 17L38.1 16L39.3 15.1L42 14.4ZM93.9 27.4L96.1 27.5L99.7 28.2L101.6 29.1L102.8 30L104.9 32.1L105.8 33.5L106.7 35.6L107 38.2L107 40.1L106.8 42.1L105.7 45.1L104.6 46.6L103.6 47.8L100 50.8L95.6 53.7L80.4 63.2L71.2 69.1L67.1 72.2L64 75L60.1 79L58.6 81L57.6 81.4L57.3 81.1L57.3 50.5L57.5 49.4L58 49L58.6 48.9L77.9 48.9L78.6 48.8L79 48L79.3 45L80.2 38.5L81.2 35.5L82.1 33.8L83.1 32.3L85.3 30.2L87.2 29.1L89.8 28.1L93.9 27.4ZM28.8 32.1L30.4 32.2L30.9 32.8L31 33.6L30.8 34.4L30.5 34.7L29.9 34.9L28.5 34.8L28 34.4L27.8 33.6L28 32.8L28.2 32.3L28.8 32.1ZM35.1 32.2L50.6 32.2L51.5 32.6L51.8 33.5L51.5 34.5L50.8 34.8L35.4 34.9L34.7 34.5L34.4 33.6L34.5 32.9L35.1 32.2ZM164.3 34.9L164.7 35L164.9 35.6L164.8 61.4L164.6 62.5L164.2 62.8L163.4 62.9L141.4 62.9L140.9 62.7L140.7 62.4L141.2 61.3L149.6 51.8L162.6 36.7L163.1 35.9L164.3 34.9ZM28.4 39.9L50.1 39.8L51.5 40.1L51.7 40.6L51.7 41.5L50.8 42.6L50.6 43.4L51.9 46.5L52.1 48.4L51.9 50.4L51.6 51.3L50.8 52.8L49 54.5L46.7 55.8L43.2 56.2L41.6 56.2L39.4 55.8L37.1 54.8L36.1 53.9L35.1 52.7L34.2 50.8L34 49.8L34 47.9L34.2 46.5L35 44.4L35.8 43.5L35.7 42.8L35.1 42.5L28.5 42.5L28 42L27.8 41.2L27.9 40.4L28.4 39.9ZM41.8 42.8L44.8 42.7L46.9 43.1L48.6 44.6L49.6 46.8L49.6 48.8L48.8 50.8L47.8 51.9L46.5 52.7L44.2 53.1L42.5 53.2L39.4 52.6L38 51.8L37.2 51L36.6 49.2L36.5 47.2L36.9 45.5L37.2 44.7L38 44L39.2 43.2L41.8 42.8ZM35.4 59.9L50.4 59.9L51.4 60.2L51.7 60.9L51.5 61.8L50.3 62.5L50 63L50.1 63.6L50.9 64.2L51.6 65.6L52.1 67.9L51.8 70.9L50.7 72.8L49.3 73.8L47.5 74.1L42.5 74.3L37.6 74.2L35.5 74.3L34.8 73.9L34.5 73.4L34.4 72.6L34.6 72.1L35.1 71.7L35.6 71.5L45.2 71.5L47.5 71.1L48.6 70.6L49.4 69.4L49.7 68.4L49.6 66.9L48.6 64.5L47.2 63.4L46.6 63L43.4 62.7L35.6 62.7L35.1 62.6L34.6 62L34.4 61L34.7 60.2L35.4 59.9ZM118.2 68.1L118.9 68.2L119.2 68.9L119.2 82.2L119.1 82.9L118.6 83.4L118.1 83.6L94.5 83.5L93.6 83.6L93.3 83.4L93.4 82.7L93.9 82.1L96.6 80.8L117.5 68.7L118.2 68.1ZM35.4 77.8L36.1 77.9L36.6 78.2L37 80.6L37.4 81L38 81.1L47.9 81L48.5 80.8L48.8 80.5L49.2 79.5L49.2 78.5L49.5 78.1L50.4 77.8L51.4 78L51.8 78.8L51.7 81.2L51.5 81.9L50.8 83L49.9 83.6L49.2 83.8L45.5 83.9L37.5 84.1L37 84.5L36.7 85.8L36.2 86.5L35.9 86.8L35.4 86.9L34.9 86.8L34.5 86.4L34.1 84.5L33.8 84.1L33.1 83.9L30.4 84L29.5 83.7L29.2 83.4L29.1 82.9L29.1 82.1L29.4 81.5L30.4 81.1L33.1 81.2L33.8 81L34.3 80.4L34.3 78.4L34.8 78L35.4 77.8ZM46.3 88.4L47.5 88.5L49.2 89L50.8 90.5L51.7 92.6L52.1 94.8L52.1 96.8L51.6 99.2L50.6 101.2L49 102.6L47.5 103.1L46.9 103L46.4 102.6L46.2 102.1L46.3 101.4L47.1 100.3L48.2 99.6L48.8 99L49.6 97.2L49.8 95.9L49.6 94L48.8 92.2L47.5 91.5L46.6 91.5L45.1 92.5L44.2 94.9L43.7 97.4L42.8 100.3L41.8 101.7L40.8 102.4L39.5 102.9L37.6 102.8L36.1 102L35.1 100.9L34.3 99.1L34 97.6L34 95L34.3 93.1L35.1 91.3L36.2 90.2L38.2 89.2L38.6 89.3L39 89.6L39.3 90.5L39.1 91.5L37.1 93.4L36.5 95.1L36.3 96.5L36.8 98.4L37.2 99.1L38.1 99.9L39.2 99.8L39.7 99.5L40.7 97.9L42.2 92.4L43.1 90.2L44.2 89L46.3 88.4ZM139.2 88.5L139.6 88.4L163.2 88.4L164.5 88.8L164.8 89.6L164.8 107.1L164.5 107.9L163.8 108.1L139.6 108.2L138.8 107.9L138.4 107.1L138.4 89.6L138.6 89L139.2 88.5Z"/></symbol>
+  <symbol id="i-arrow-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5.5 3.5h3l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.4 6.4l1.5-2.3 4.6 1.8v3a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 3.5 5.6a2 2 0 0 1 2-2.1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20.5 5.3 16A8.5 8.5 0 1 1 8.4 19z"/><path d="M9 9.2c0 3 2.6 5.6 5.6 5.6l1.1-1.4-1.8-1-1 .8a4 4 0 0 1-2.3-2.3l.8-1-1-1.8z" stroke-width="1.2"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5v11.2a3.8 3.8 0 1 1-3.8-3.8"/><path d="M14 3.5c.4 2.8 2.4 4.6 5.2 4.8"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 8.5h2.5v-4h-2.5a4.5 4.5 0 0 0-4.5 4.5v2.5H7.5v3.8H10v7h3.8v-7h2.8l.6-3.8h-3.4V9.4a.9.9 0 0 1 .7-.9z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-aperture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.3 8.1 20 18M9.7 8.1h11.4M7.4 12l5.7-9.9M9.7 15.9 4 6M14.3 15.9H2.9M16.6 12l-5.7 9.9"/></symbol>
+  <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l1.5-4M15 21l-1.5-4"/><circle cx="9" cy="14" r=".8" fill="currentColor"/><circle cx="15" cy="14" r=".8" fill="currentColor"/></symbol>
+  <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M10 17V7.5h3.2a2.8 2.8 0 0 1 0 5.6H10"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 9.5a12 12 0 0 1 17 0M6.5 12.6a7.6 7.6 0 0 1 11 0M9.4 15.6a3.4 3.4 0 0 1 5.2 0"/><circle cx="12" cy="18.6" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 4h10l4 4v6l-4 4H4z"/><path d="M14 4v14M18 8h2.5M18 14h2.5"/><path d="M8 18v3M6 21h4" stroke-linecap="round"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="8.5" r="3.3"/><path d="M3 19.5a6 6 0 0 1 12 0"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6M17.5 14.3a6 6 0 0 1 3.5 5.2"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3.5a8.5 8.5 0 0 0 0 17c1.4 0 1.9-1 1.4-2.1-.6-1.3.3-2.6 1.7-2.6h1.9a3.5 3.5 0 0 0 3.5-3.5C20.5 7 16.7 3.5 12 3.5z"/><circle cx="7.8" cy="11" r="1.1" fill="currentColor" stroke="none"/><circle cx="10.5" cy="7.4" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="7.6" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-mirror" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="3.5" width="14" height="12" rx="2"/><path d="M8 19.5h8M12 15.5v4M9 7l2-2M9.5 10l4-4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1z"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 18V5.5l11-2V16"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-film" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M7.5 4v16M16.5 4v16M3.5 9h4M3.5 15h4M16.5 9h4M16.5 15h4"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.5c0 1.5 2.5 3 5.5 3s5.5-1.5 5.5-3V11M21.5 9v5" stroke-linecap="round"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 19V6M3 15h18v4M21 15v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11.5" r="2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m12 4 2.3 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.8 2.7 1.1-5.4-4-3.7 5.4-.6z"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11" stroke-linecap="round"/></symbol>
+</svg>
+<!--/include-->
+<!--#include header-->
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="hdr" data-header>
+  <div class="hdr__inner">
+    <a class="logo" href="/studio124.be/" data-page-link="index" aria-current="page" aria-label="Studio 124, retour à l’accueil"><svg class="logo__mark" aria-hidden="true"><use href="#logo"/></svg></a>
+    <nav class="hdr__nav" aria-label="Navigation principale">
+      <a href="/studio124.be/#studio" data-nav="studio">Le studio</a>
+      <a href="/studio124.be/#tarifs" data-nav="tarifs">Tarifs</a>
+      <a href="/studio124.be/#espaces" data-nav="espaces">Espaces</a>
+      <a href="/studio124.be/#materiel" data-nav="materiel">Matériel</a>
+      <a href="/studio124.be/#realisations" data-nav="realisations">Réalisations</a>
+      <a href="/studio124.be/#faq" data-nav="faq">Questions</a>
+    </nav>
+    <div class="hdr__end">
+      <a class="hdr__tel" href="tel:+32472040501" data-phone data-track="phone_click"><span class="dot" aria-hidden="true"></span><span data-phone-label>0472&nbsp;04&nbsp;05&nbsp;01</span></a>
+      <a class="btn btn--accent btn--sm" href="/studio124.be/#contact" data-tab="reservation" data-track="cta_header">Réserver</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="burger__bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden data-menu data-lenis-prevent>
+  <nav class="menu__nav" aria-label="Menu principal">
+    <a href="/studio124.be/#studio"><span>01</span>Le studio</a>
+    <a href="/studio124.be/#tarifs"><span>02</span>Tarifs</a>
+    <a href="/studio124.be/#espaces"><span>03</span>Espaces</a>
+    <a href="/studio124.be/#materiel"><span>04</span>Matériel</a>
+    <a href="/studio124.be/#realisations"><span>05</span>Réalisations</a>
+    <a href="/studio124.be/#faq"><span>06</span>Questions</a>
+    <a href="/studio124.be/#contact" data-tab="reservation"><span>07</span>Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--accent" href="/studio124.be/#contact" data-tab="reservation" data-track="cta_menu">Réserver un créneau<svg class="btn__icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+    <a class="btn btn--line" href="tel:+32472040501" data-phone data-track="phone_click"><svg class="btn__icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-phone-label>0472&nbsp;04&nbsp;05&nbsp;01</span></a>
+    <p>Rue Verte 124, 1030 Schaerbeek<br><span class="status" data-phone-status></span></p>
+  </div>
+</div>
+<!--/include-->
+
+<main id="main">
+
+  <!-- ================= Héros : l’appareil photo ================= -->
+  <section class="hero" id="top" aria-labelledby="hero-title" data-hero>
+    <div class="hero__stage" data-stage aria-hidden="true">
+      <img class="hero__poster" src="/studio124.be/assets/img/camera-poster-1200.webp" srcset="/studio124.be/assets/img/camera-poster-700.webp 700w, /studio124.be/assets/img/camera-poster-1200.webp 1200w" sizes="(max-width: 700px) 92vw, 60vw" width="1200" height="760" alt="L’appareil photo Studio 124, capot titane et objectif à bague jaune." loading="lazy" decoding="async" data-poster>
+    </div>
+    <div class="hero__copy">
+      <p class="hero__eyebrow"><svg class="hero__logo" aria-hidden="true"><use href="#logo"/></svg><span>Studio photo &amp; vidéo · Bruxelles</span></p>
+      <h1 class="hero__title" id="hero-title"><span class="hl"><span>Le studio qui</span></span> <span class="hl"><span>ne dort jamais.</span></span></h1>
+      <p class="hero__sub">200&nbsp;m² équipés à deux pas de la gare du Nord, ouverts 24&nbsp;h/24. La lumière, les fonds et l’équipe sont inclus.</p>
+    </div>
+    <div class="hero__foot">
+      <div class="hero__ctas">
+        <a class="btn btn--accent" href="#contact" data-tab="reservation" data-track="cta_hero">Réserver un créneau</a>
+        <a class="link-arrow" href="#contact" data-tab="devis" data-track="cta_hero_devis">Demander un devis<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+      </div>
+      <p class="hero__price">Dès 55&nbsp;€/h, matériel pro inclus · 7&nbsp;j/7, 24&nbsp;h/24</p>
+      <button class="hero__shutter" type="button" data-shoot aria-describedby="shutter-hint">
+        <span class="hero__shutter-btn" aria-hidden="true"><span></span></span>
+        <span class="hero__shutter-text">Déclenchez<small id="shutter-hint">ou faites défiler</small></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= La photo : le plateau ================= -->
+  <section class="shot" id="studio" aria-labelledby="studio-title" data-shot>
+    <figure class="shot__frame">
+      <img class="shot__img" src="/studio124.be/assets/img/plateau-1600.webp" srcset="/studio124.be/assets/img/plateau-640.webp 640w, /studio124.be/assets/img/plateau-1024.webp 1024w, /studio124.be/assets/img/plateau-1600.webp 1600w, /studio124.be/assets/img/plateau-2400.webp 2400w" sizes="(max-aspect-ratio: 3/2) 150vh, 100vw" width="1600" height="1067" alt="Le cyclorama blanc du Studio 124, éclairé par des flashs et des boîtes à lumière, prêt pour une séance.">
+      <div class="vf" aria-hidden="true">
+        <span class="vf__c vf__c--tl"></span><span class="vf__c vf__c--tr"></span><span class="vf__c vf__c--bl"></span><span class="vf__c vf__c--br"></span>
+        <span class="vf__focus"></span>
+        <span class="vf__top"><span class="vf__rec">IMG_0124.RAW</span><span>Rue Verte 124 · Schaerbeek</span></span>
+        <span class="vf__exif"><span>1/125</span><span>F8</span><span>ISO 100</span><span>±0.0</span><span class="vf__bat">24/7</span></span>
+      </div>
+    </figure>
+    <div class="shot__text wrap">
+      <p class="eyebrow">Le plateau</p>
+      <h2 class="shot__title" id="studio-title" data-lines>Clic.<br>Le plateau est à vous.</h2>
+      <p class="shot__lede" data-reveal>Un cyclorama blanc sur 100&nbsp;m², 11&nbsp;mètres de recul, 4&nbsp;mètres sous plafond. Quand vous arrivez, les flashs sont branchés, le fond est monté et quelqu’un de l’équipe vous attend.</p>
+      <div class="shot__ctas" data-reveal>
+        <a class="btn btn--dark" href="#tarifs" data-track="cta_shot_tarifs">Voir les tarifs</a>
+        <a class="link-arrow link-arrow--dark" href="#espaces">Visiter les espaces<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+      </div>
+    </div>
+    <ul class="specs wrap" aria-label="Le studio en chiffres">
+      <li data-reveal><strong><span data-count="200">200</span>&nbsp;m²</strong><span>d’espace de création</span></li>
+      <li data-reveal><strong><span data-count="11">11</span>&nbsp;m</strong><span>de recul sur le plateau</span></li>
+      <li data-reveal><strong><span data-count="4">4</span>&nbsp;m</strong><span>sous plafond</span></li>
+      <li data-reveal><strong><span data-count="17">17</span></strong><span>couleurs de fond</span></li>
+      <li data-reveal><strong>24/7</strong><span>sur réservation</span></li>
+    </ul>
+  </section>
+
+  <!-- ================= Tout est compris ================= -->
+  <section class="sec inclus" id="inclus" aria-labelledby="inclus-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Compris dans la location</p>
+        <h2 class="sec__title" id="inclus-title" data-lines>Tout est compris.<br><em>Même l’aide.</em></h2>
+        <p class="sec__lede" data-reveal>Le plateau, l’éclairage professionnel, les fonds, la loge… et une équipe présente pour installer, changer les fonds et vous dépanner. Vous n’apportez que votre idée.</p>
+      </header>
+      <div class="bento">
+        <article class="tile tile--photo tile--wide" data-reveal>
+          <img src="/studio124.be/assets/img/coulisses-fauteuil-1024.webp" srcset="/studio124.be/assets/img/coulisses-fauteuil-640.webp 640w, /studio124.be/assets/img/coulisses-fauteuil-1024.webp 1024w, /studio124.be/assets/img/coulisses-fauteuil-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 60vw" width="1024" height="683" alt="Une séance au Studio 124 : un modèle dans un fauteuil jaune, entre parapluies et boîtes à lumière, sous une lueur rouge." loading="lazy" decoding="async">
+          <div class="tile__body">
+            <svg class="tile__icon" aria-hidden="true"><use href="#i-light"/></svg>
+            <h3>Éclairage pro inclus</h3>
+            <p>Flashs Elinchrom, Kaiser et Neewer, LED Nanlite et Ikan, boîtes à lumière, beauty dish, nids d’abeille.</p>
+          </div>
+        </article>
+        <article class="tile tile--num" data-reveal>
+          <p class="tile__big"><span data-count="100">100</span><small>&nbsp;m²</small></p>
+          <h3>de plateau</h3>
+          <p>Cyclorama blanc, recul de 11&nbsp;m, 4&nbsp;m sous plafond.</p>
+        </article>
+        <article class="tile tile--paper" data-reveal>
+          <p class="tile__big">17<small>&nbsp;couleurs</small></p>
+          <h3>Fonds papier et tissu, 3&nbsp;m de large</h3>
+          <ul class="chips chips--mini" aria-hidden="true" data-chips-mini></ul>
+        </article>
+        <article class="tile tile--icon" data-reveal>
+          <svg class="tile__icon" aria-hidden="true"><use href="#i-users"/></svg>
+          <h3>Le staff sur place</h3>
+          <p>Changement de fond, installation du matériel, conseils lumière&nbsp;: quelqu’un est toujours là.</p>
+        </article>
+        <article class="tile tile--photo" data-reveal>
+          <img src="/studio124.be/assets/img/espace-loge-640.webp" srcset="/studio124.be/assets/img/espace-loge-640.webp 640w, /studio124.be/assets/img/espace-loge-1024.webp 1024w" sizes="(max-width: 760px) 92vw, 30vw" width="640" height="427" alt="La loge maquillage du studio, avec son miroir lumineux et son fauteuil." loading="lazy" decoding="async">
+          <div class="tile__body">
+            <svg class="tile__icon" aria-hidden="true"><use href="#i-mirror"/></svg>
+            <h3>Loge maquillage</h3>
+            <p>Miroir lumineux, portant, coin détente.</p>
+          </div>
+        </article>
+        <article class="tile tile--night" data-reveal>
+          <p class="tile__big">24/7</p>
+          <h3>Ouvert jour et nuit</h3>
+          <p>Sur réservation. Entre 20&nbsp;h et 8&nbsp;h, prévenez-nous 24&nbsp;h avant.</p>
+        </article>
+        <article class="tile tile--icon" data-reveal>
+          <svg class="tile__icon" aria-hidden="true"><use href="#i-train"/></svg>
+          <h3>Gare du Nord à deux pas</h3>
+          <p>Parking sécurisé Interparking, rue de Quatrecht&nbsp;38.</p>
+        </article>
+        <article class="tile tile--icon" data-reveal>
+          <svg class="tile__icon" aria-hidden="true"><use href="#i-wifi"/></svg>
+          <h3>Wi-Fi, Chromecast, sono</h3>
+          <p>Votre playlist en jack ou Spotify, chauffage central, espace lounge.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Tarifs ================= -->
+  <section class="sec tarifs" id="tarifs" aria-labelledby="tarifs-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--center">
+        <p class="eyebrow">Formules &amp; tarifs</p>
+        <h2 class="sec__title" id="tarifs-title" data-lines>Des tarifs clairs.<br><em>Sans surprise.</em></h2>
+        <p class="sec__lede" data-reveal>Trois formules, à l’heure, à la demi-journée ou à la journée. Matériel et éclairage toujours compris.</p>
+      </header>
+      <div class="plans">
+        <article class="plan" data-reveal>
+          <div class="plan__media">
+            <img src="/studio124.be/assets/img/offre-location-800.webp" srcset="/studio124.be/assets/img/offre-location-480.webp 480w, /studio124.be/assets/img/offre-location-800.webp 800w, /studio124.be/assets/img/offre-location-1100.webp 1100w" sizes="(max-width: 900px) 92vw, 30vw" width="800" height="1000" alt="Le plateau du Studio 124 avec son cyclorama blanc, ses flashs et ses parapluies." loading="lazy" decoding="async">
+            <span class="plan__tag">Le plus flexible</span>
+          </div>
+          <div class="plan__body">
+            <h3 class="plan__name">Location du studio</h3>
+            <p class="plan__pitch">Vous venez avec votre équipe, on vous laisse le plateau.</p>
+            <p class="plan__price"><small>dès</small> 55&nbsp;€<small>/h</small></p>
+            <ul class="plan__rates">
+              <li><span>Semaine, 9&nbsp;h – 12&nbsp;h</span><span>55&nbsp;€/h</span></li>
+              <li><span>Semaine</span><span>65&nbsp;€/h</span></li>
+              <li><span>Week-end</span><span>75&nbsp;€/h</span></li>
+            </ul>
+            <ul class="plan__list">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Éclairages, fonds et loge inclus</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Le staff installe et change les fonds</li>
+              <li><svg aria-hidden="true"><use href="#i-plus"/></svg>Assistance lumière dédiée&nbsp;: 35&nbsp;€/h</li>
+            </ul>
+            <a class="btn btn--accent btn--block" href="#contact" data-tab="reservation" data-session="location" data-track="plan_location">Réserver le plateau</a>
+            <p class="plan__note">Minimum 2&nbsp;heures</p>
+          </div>
+        </article>
+        <article class="plan plan--featured" data-reveal>
+          <div class="plan__media">
+            <img src="/studio124.be/assets/img/cyclo-modele-1024.webp" srcset="/studio124.be/assets/img/cyclo-modele-640.webp 640w, /studio124.be/assets/img/cyclo-modele-1024.webp 1024w, /studio124.be/assets/img/cyclo-modele-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 30vw" width="1024" height="683" alt="Une séance photo sur le cyclorama blanc : un modèle entre deux boîtes à lumière." loading="lazy" decoding="async">
+            <span class="plan__tag plan__tag--accent">Clé en main</span>
+          </div>
+          <div class="plan__body">
+            <h3 class="plan__name">Shooting photo</h3>
+            <p class="plan__pitch">Un photographe du studio s’occupe des images, de la lumière à la retouche.</p>
+            <p class="plan__price"><small>dès</small> 250&nbsp;€<small>/h</small></p>
+            <ul class="plan__rates">
+              <li><span>2 heures</span><span>500&nbsp;€</span></li>
+              <li><span>Demi-journée (4&nbsp;h)</span><span>1&nbsp;000&nbsp;€</span></li>
+              <li><span>Journée (8&nbsp;h)</span><span>2&nbsp;000&nbsp;€</span></li>
+            </ul>
+            <ul class="plan__list">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Photographe, studio et matériel inclus</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Portraits corporate, packshots, mode</li>
+              <li><svg aria-hidden="true"><use href="#i-plus"/></svg>Retouche&nbsp;: 5&nbsp;€ par photo choisie</li>
+            </ul>
+            <a class="btn btn--accent btn--block" href="#contact" data-tab="reservation" data-session="photo" data-track="plan_photo">Réserver un shooting</a>
+            <p class="plan__note">Tarif semaine · week-end sur demande</p>
+          </div>
+        </article>
+        <article class="plan" data-reveal>
+          <div class="plan__media">
+            <img src="/studio124.be/assets/img/offre-video-800.webp" srcset="/studio124.be/assets/img/offre-video-480.webp 480w, /studio124.be/assets/img/offre-video-800.webp 800w, /studio124.be/assets/img/offre-video-1100.webp 1100w" sizes="(max-width: 900px) 92vw, 30vw" width="800" height="1000" alt="Tournage d’une interview au studio, deux personnes dans des fauteuils sous une lumière violette." loading="lazy" decoding="async">
+            <span class="plan__tag">Interview · podcast · pub</span>
+          </div>
+          <div class="plan__body">
+            <h3 class="plan__name">Production vidéo</h3>
+            <p class="plan__pitch">Votre tournage au studio, avec un vidéaste de l’équipe.</p>
+            <p class="plan__price"><small>dès</small> 250&nbsp;€<small>/h</small></p>
+            <ul class="plan__rates">
+              <li><span>2 heures</span><span>500&nbsp;€</span></li>
+              <li><span>Demi-journée (4&nbsp;h)</span><span>1&nbsp;000&nbsp;€</span></li>
+              <li><span>Journée (8&nbsp;h)</span><span>2&nbsp;000&nbsp;€</span></li>
+            </ul>
+            <ul class="plan__list">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vidéaste, studio et matériel inclus</li>
+              <li><svg aria-hidden="true"><use href="#i-plus"/></svg>Assistance lumière&nbsp;: 75&nbsp;€ par session</li>
+              <li><svg aria-hidden="true"><use href="#i-plus"/></svg>Montage&nbsp;: sur devis</li>
+            </ul>
+            <a class="btn btn--accent btn--block" href="#contact" data-tab="reservation" data-session="video" data-track="plan_video">Planifier un tournage</a>
+            <p class="plan__note">Tarif semaine · week-end sur demande</p>
+          </div>
+        </article>
+      </div>
+      <div class="plan-wide" data-reveal>
+        <div class="plan-wide__media">
+          <img src="/studio124.be/assets/img/offre-graphisme-480.webp" srcset="/studio124.be/assets/img/offre-graphisme-480.webp 480w, /studio124.be/assets/img/offre-graphisme-750.webp 750w" sizes="(max-width: 760px) 40vw, 220px" width="480" height="480" alt="Une pochette d’album réalisée par le studio : un portrait sur fond orange." loading="lazy" decoding="async">
+        </div>
+        <div class="plan-wide__body">
+          <h3 class="plan__name">Communication visuelle</h3>
+          <p>Affiches, flyers, visuels pour les réseaux sociaux, bannières, cartes de visite, logos, pochettes d’album&nbsp;: le graphiste du studio prolonge vos images.</p>
+        </div>
+        <div class="plan-wide__end">
+          <p class="plan__price plan__price--sm">Sur devis</p>
+          <a class="btn btn--line" href="#contact" data-tab="devis" data-need="graphisme" data-track="plan_graphisme">Demander un devis</a>
+        </div>
+      </div>
+      <p class="tarifs__fine" data-reveal>Tarifs indicatifs&nbsp;: le montant final est confirmé par le studio après examen du projet. Session réservée moins de 24&nbsp;h à l’avance&nbsp;: +15&nbsp;€. Tarif week-end le samedi et le dimanche. Toute heure entamée au-delà du créneau est facturée.</p>
+    </div>
+  </section>
+
+  <!-- ================= Ce qu’on tourne ici ================= -->
+  <section class="sec usages" id="usages" aria-labelledby="usages-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--split">
+        <div>
+          <p class="eyebrow">Pour les marques, agences et créateurs</p>
+          <h2 class="sec__title" id="usages-title" data-lines>Ce qu’on tourne<br><em>ici.</em></h2>
+        </div>
+        <div class="rail-nav" data-rail-nav>
+          <button class="round" type="button" data-rail-prev aria-label="Précédent"><svg aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+          <button class="round" type="button" data-rail-next aria-label="Suivant"><svg aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+        </div>
+      </header>
+    </div>
+    <ul class="rail" data-rail data-lenis-prevent-horizontal>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-portrait-480.webp" srcset="/studio124.be/assets/img/cas-portrait-480.webp 480w, /studio124.be/assets/img/cas-portrait-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Portrait d’un homme en veste blanche, réalisé au studio." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">01</p><h3>Portraits &amp; personal branding</h3><p>Photos corporate, LinkedIn, équipes, books de comédiens et de modèles.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-packshot-480.webp" srcset="/studio124.be/assets/img/cas-packshot-480.webp 480w, /studio124.be/assets/img/cas-packshot-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Packshot culinaire : un dessert dressé, photographié en studio." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">02</p><h3>E-commerce &amp; packshots</h3><p>Produits, food, cosmétiques&nbsp;: fond blanc ou couleur, lumière maîtrisée.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-mode-480.webp" srcset="/studio124.be/assets/img/cas-mode-480.webp 480w, /studio124.be/assets/img/cas-mode-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Photo de mode en pied sur fond blanc." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">03</p><h3>Mode &amp; lookbooks</h3><p>Cyclorama, fonds couleur et loge maquillage dans le même lieu.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-interview-480.webp" srcset="/studio124.be/assets/img/cas-interview-480.webp 480w, /studio124.be/assets/img/cas-interview-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Tournage d’une interview dans le salon du studio." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">04</p><h3>Interviews &amp; podcasts vidéo</h3><p>Le salon et ses fauteuils, la lumière réglée&nbsp;: il ne reste qu’à appuyer sur REC.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-musique-480.webp" srcset="/studio124.be/assets/img/cas-musique-480.webp 480w, /studio124.be/assets/img/cas-musique-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Portrait d’artiste avec un halo de lumière dorée." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">05</p><h3>Artistes, clips &amp; pochettes</h3><p>Lumière RGB, ambiance rouge, fonds sombres&nbsp;: des images qui ont du caractère.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-beaute-480.webp" srcset="/studio124.be/assets/img/cas-beaute-480.webp 480w, /studio124.be/assets/img/cas-beaute-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Trois femmes photographiées en studio pour une campagne beauté." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">06</p><h3>Beauté &amp; cosmétique</h3><p>Peau, maquillage, détails&nbsp;: lumière douce, beauty dish et réflecteurs.</p></div>
+      </li>
+      <li class="case" data-reveal>
+        <img src="/studio124.be/assets/img/cas-creatif-480.webp" srcset="/studio124.be/assets/img/cas-creatif-480.webp 480w, /studio124.be/assets/img/cas-creatif-800.webp 800w" sizes="(max-width: 760px) 78vw, 340px" width="480" height="600" alt="Portrait créatif au maquillage bleu métallisé." loading="lazy" decoding="async">
+        <div class="case__body"><p class="case__num">07</p><h3>Contenus réseaux sociaux</h3><p>Reels, TikTok, campagnes&nbsp;: plusieurs formats dans la même session.</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= Les espaces ================= -->
+  <section class="sec espaces" id="espaces" aria-labelledby="espaces-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Les espaces</p>
+        <h2 class="sec__title" id="espaces-title" data-lines>Un lieu,<br><em>six ambiances.</em></h2>
+      </header>
+      <div class="spaces" data-spaces>
+        <div class="spaces__tabs" role="tablist" aria-label="Espaces du studio">
+          <button type="button" role="tab" id="sp-tab-1" aria-controls="sp-1" aria-selected="true" data-space="0"><span>01</span>Cyclorama</button>
+          <button type="button" role="tab" id="sp-tab-2" aria-controls="sp-2" aria-selected="false" tabindex="-1" data-space="1"><span>02</span>Fonds couleur</button>
+          <button type="button" role="tab" id="sp-tab-3" aria-controls="sp-3" aria-selected="false" tabindex="-1" data-space="2"><span>03</span>Salon</button>
+          <button type="button" role="tab" id="sp-tab-4" aria-controls="sp-4" aria-selected="false" tabindex="-1" data-space="3"><span>04</span>Loge</button>
+          <button type="button" role="tab" id="sp-tab-5" aria-controls="sp-5" aria-selected="false" tabindex="-1" data-space="4"><span>05</span>Lounge</button>
+          <button type="button" role="tab" id="sp-tab-6" aria-controls="sp-6" aria-selected="false" tabindex="-1" data-space="5"><span>06</span>Lumière rouge</button>
+        </div>
+        <div class="spaces__view">
+          <div class="spaces__panel is-active" role="tabpanel" id="sp-1" aria-labelledby="sp-tab-1" data-space-panel>
+            <img src="/studio124.be/assets/img/espace-cyclo-1024.webp" srcset="/studio124.be/assets/img/espace-cyclo-640.webp 640w, /studio124.be/assets/img/espace-cyclo-1024.webp 1024w, /studio124.be/assets/img/espace-cyclo-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="Le cyclorama blanc vide, sous la verrière du studio." loading="lazy" decoding="async">
+            <div class="spaces__text"><h3>Le blanc infini.</h3><p>100&nbsp;m² de plateau, 11&nbsp;m de recul, 4&nbsp;m sous plafond. Pour la mode, les packshots grand format et la vidéo.</p></div>
+          </div>
+          <div class="spaces__panel" role="tabpanel" id="sp-2" aria-labelledby="sp-tab-2" data-space-panel hidden>
+            <span class="paper__sweep" aria-hidden="true" data-paper-sweep></span>
+            <img src="/studio124.be/assets/img/espace-fond-rouge-1024.webp" srcset="/studio124.be/assets/img/espace-fond-rouge-640.webp 640w, /studio124.be/assets/img/espace-fond-rouge-1024.webp 1024w, /studio124.be/assets/img/espace-fond-rouge-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="Un modèle en robe noire devant un fond papier rouge cramoisi." loading="lazy" decoding="async">
+            <div class="spaces__text">
+              <h3>17 couleurs, prêtes à dérouler.</h3>
+              <p>Fonds papier et tissu de 3&nbsp;m de large, du bleu chroma au rouge cramoisi. Choisissez la vôtre&nbsp;:</p>
+              <div class="paper" data-paper>
+                <ul class="chips" role="list" data-chips></ul>
+                <p class="paper__name" aria-live="polite" data-paper-name>Rouge cramoisi</p>
+              </div>
+            </div>
+          </div>
+          <div class="spaces__panel" role="tabpanel" id="sp-3" aria-labelledby="sp-tab-3" data-space-panel hidden>
+            <img src="/studio124.be/assets/img/espace-salon-1024.webp" srcset="/studio124.be/assets/img/espace-salon-640.webp 640w, /studio124.be/assets/img/espace-salon-1024.webp 1024w, /studio124.be/assets/img/espace-salon-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="Le salon du studio : fauteuil jaune, mannequins de couture et mur de polaroïds." loading="lazy" decoding="async">
+            <div class="spaces__text"><h3>Le salon.</h3><p>Fauteuils, table, mur de polaroïds&nbsp;: le décor des interviews, des podcasts et des portraits lifestyle.</p></div>
+          </div>
+          <div class="spaces__panel" role="tabpanel" id="sp-4" aria-labelledby="sp-tab-4" data-space-panel hidden>
+            <img src="/studio124.be/assets/img/espace-loge-1024.webp" srcset="/studio124.be/assets/img/espace-loge-640.webp 640w, /studio124.be/assets/img/espace-loge-1024.webp 1024w, /studio124.be/assets/img/espace-loge-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="La loge : miroir à ampoules, ring light et fauteuil de maquillage." loading="lazy" decoding="async">
+            <div class="spaces__text"><h3>La loge.</h3><p>Miroir lumineux, ring light et fauteuil&nbsp;: maquillage et coiffure sur place, à deux pas du plateau.</p></div>
+          </div>
+          <div class="spaces__panel" role="tabpanel" id="sp-5" aria-labelledby="sp-tab-5" data-space-panel hidden>
+            <img src="/studio124.be/assets/img/espace-lounge-1024.webp" srcset="/studio124.be/assets/img/espace-lounge-640.webp 640w, /studio124.be/assets/img/espace-lounge-1024.webp 1024w, /studio124.be/assets/img/espace-lounge-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="L’espace lounge avec le logo 124 lumineux au mur, des plantes et un écran." loading="lazy" decoding="async">
+            <div class="spaces__text"><h3>Le lounge.</h3><p>Canapés, Wi-Fi, Chromecast et sono&nbsp;: l’endroit où l’équipe souffle entre deux prises.</p></div>
+          </div>
+          <div class="spaces__panel" role="tabpanel" id="sp-6" aria-labelledby="sp-tab-6" data-space-panel hidden>
+            <img src="/studio124.be/assets/img/espace-rouge-1024.webp" srcset="/studio124.be/assets/img/espace-rouge-640.webp 640w, /studio124.be/assets/img/espace-rouge-1024.webp 1024w, /studio124.be/assets/img/espace-rouge-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 66vw" width="1024" height="683" alt="Une pièce entièrement baignée de lumière rouge, avec rideaux et suspension." loading="lazy" decoding="async">
+            <div class="spaces__text"><h3>Lumière rouge.</h3><p>Une ambiance de cinéma pour les clips, les pochettes et les portraits graphiques.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Matériel ================= -->
+  <section class="sec materiel" id="materiel" aria-labelledby="materiel-title">
+    <div class="wrap materiel__grid">
+      <header class="sec__head">
+        <p class="eyebrow">Fiche technique</p>
+        <h2 class="sec__title" id="materiel-title" data-lines>Le matériel.<br><em>Tout le matériel.</em></h2>
+        <p class="sec__lede" data-reveal>Compris dans la location. La liste complète, pour préparer votre plan de feux avant de venir.</p>
+        <figure class="materiel__fig" data-reveal>
+          <img src="/studio124.be/assets/img/coulisses-camera-640.webp" srcset="/studio124.be/assets/img/coulisses-camera-640.webp 640w, /studio124.be/assets/img/coulisses-camera-1168.webp 1168w" sizes="(max-width: 900px) 92vw, 34vw" width="640" height="427" alt="Un appareil sur trépied face au plateau, en pleine séance." loading="lazy" decoding="async">
+        </figure>
+      </header>
+      <div class="specsheet" data-specsheet>
+        <details class="sheet" open>
+          <summary><span class="sheet__n">01</span>Flashs &amp; lumières<svg aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <ul>
+            <li><span>Elinchrom BRX&nbsp;500</span><span>500&nbsp;J · ×2</span></li>
+            <li><span>Elinchrom D-Lite RX4</span><span>400&nbsp;W · ×2</span></li>
+            <li><span>Elinchrom Style 400BX</span><span>250&nbsp;W · ×2</span></li>
+            <li><span>Elinchrom D-Lite 2it</span><span>6–100&nbsp;J</span></li>
+            <li><span>Kaiser Studiolight H</span><span>1000&nbsp;W · ×2</span></li>
+            <li><span>Neewer S101-300</span><span>300&nbsp;W · ×2</span></li>
+            <li><span>Neewer CB60 RGB</span><span>70&nbsp;W</span></li>
+            <li><span>Nanlite FS-300B bicolore</span><span>2700–6500&nbsp;K</span></li>
+            <li><span>Ikan IB500</span><span>350&nbsp;W · ×3</span></li>
+            <li><span>Photoflex StarFlash</span><span>300&nbsp;Ws</span></li>
+            <li><span>Panneaux LED vidéo</span><span>3200–5600&nbsp;K · ×3</span></li>
+            <li><span>Lampadaires LED RGB</span><span>165&nbsp;cm · ×2</span></li>
+            <li><span>Ring light, LED UKing, lumière DJ</span><span>ambiances</span></li>
+          </ul>
+        </details>
+        <details class="sheet" open>
+          <summary><span class="sheet__n">02</span>Modeleurs &amp; accessoires<svg aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <ul>
+            <li><span>Parapluie Elinchrom</span><span>2&nbsp;m</span></li>
+            <li><span>Softbox honeycomb</span><span>1,5&nbsp;m</span></li>
+            <li><span>Softboxes octogonales Walimex Pro, Neewer</span><span>90 &amp; 50&nbsp;cm</span></li>
+            <li><span>Softboxes rectangulaires Neewer, Walimex, Kaiser</span><span>×5</span></li>
+            <li><span>Beauty dish + nid d’abeille</span><span>Elinchrom</span></li>
+            <li><span>Snoots + nids d’abeille</span><span>×2</span></li>
+            <li><span>Réflecteur 5 en 1, diffuseurs</span><span>×3</span></li>
+            <li><span>Panneaux noir / blanc</span><span>×6</span></li>
+            <li><span>Manfrotto 420B (girafe), pied wind-up</span><span>×2</span></li>
+            <li><span>Pieds d’éclairage</span><span>×8</span></li>
+            <li><span>Trépieds caméra, émetteur flash</span><span>×3</span></li>
+            <li><span>Ventilateurs, présentoirs blancs</span><span>packshot</span></li>
+          </ul>
+        </details>
+        <details class="sheet">
+          <summary><span class="sheet__n">03</span>Appareils &amp; optiques <small>(en option)</small><svg aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <ul>
+            <li><span>Blackmagic Pocket Cinema Camera</span><span>6K</span></li>
+            <li><span>Sony Alpha 7</span><span>+ 28–70&nbsp;mm</span></li>
+            <li><span>Nikon D7000</span><span>+ 18–55 / 55–300&nbsp;mm</span></li>
+            <li><span>Caméscope Sony HXR-MC2500</span><span>vidéo</span></li>
+            <li><span>Tamron SP 35&nbsp;mm</span><span>f/1.8</span></li>
+            <li><span>Sigma 17–50&nbsp;mm</span><span>f/2.8</span></li>
+            <li><span>Canon 18–200&nbsp;mm</span><span>zoom</span></li>
+            <li><span>Stabilisateur Zhiyun Weebill S</span><span>gimbal</span></li>
+          </ul>
+        </details>
+        <details class="sheet">
+          <summary><span class="sheet__n">04</span>Sur place<svg aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <ul>
+            <li><span>Plateau</span><span>100&nbsp;m², recul 11&nbsp;m</span></li>
+            <li><span>Espaces de prise de vue</span><span>fond studio, salon, détente</span></li>
+            <li><span>Fonds papier et tissu</span><span>3&nbsp;m · 17 couleurs</span></li>
+            <li><span>Loge maquillage</span><span>miroir lumineux</span></li>
+            <li><span>Sono</span><span>jack ou Spotify</span></li>
+            <li><span>Wi-Fi &amp; Chromecast</span><span>inclus</span></li>
+            <li><span>Chauffage central, toilettes</span><span>inclus</span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Comment ça se passe ================= -->
+  <section class="sec process" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--center">
+        <p class="eyebrow">Réserver</p>
+        <h2 class="sec__title" id="process-title" data-lines>Deux minutes pour réserver.<br><em>Le reste, on s’en occupe.</em></h2>
+      </header>
+      <ol class="steps">
+        <li class="step" data-reveal><span class="step__n">01</span><svg class="step__icon" aria-hidden="true"><use href="#i-calendar"/></svg><h3>Votre demande</h3><p>Choisissez la formule, la date et l’heure. Un mot sur votre projet suffit.</p></li>
+        <li class="step" data-reveal><span class="step__n">02</span><svg class="step__icon" aria-hidden="true"><use href="#i-check"/></svg><h3>La confirmation</h3><p>Le studio valide le créneau. Vous réglez par virement dans les 24&nbsp;h et recevez la confirmation par e-mail.</p></li>
+        <li class="step" data-reveal><span class="step__n">03</span><svg class="step__icon" aria-hidden="true"><use href="#i-aperture"/></svg><h3>Le jour J</h3><p>Arrivez 15&nbsp;minutes avant&nbsp;: le plateau est prêt, l’équipe vous accueille.</p></li>
+        <li class="step" data-reveal><span class="step__n">04</span><svg class="step__icon" aria-hidden="true"><use href="#i-film"/></svg><h3>Vos images</h3><p>Avec un shooting ou une production, la retouche et le montage suivent jusqu’au fichier final.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= Réalisations ================= -->
+  <section class="sec work" id="realisations" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--split">
+        <div>
+          <p class="eyebrow">Réalisations</p>
+          <h2 class="sec__title" id="work-title" data-lines>Fait au<br><em>Studio 124.</em></h2>
+        </div>
+        <a class="btn btn--line" href="https://www.instagram.com/studio124.be/" target="_blank" rel="noopener" data-track="instagram_click"><svg class="btn__icon" aria-hidden="true"><use href="#i-insta"/></svg>Les coulisses sur Instagram</a>
+      </header>
+    </div>
+    <div class="marquee" aria-label="Galerie de photos réalisées au studio">
+      <div class="marquee__track" data-marquee>
+        <ul class="marquee__row">
+          <li><img src="/studio124.be/assets/img/pf-01-400.webp" srcset="/studio124.be/assets/img/pf-01-400.webp 400w, /studio124.be/assets/img/pf-01-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait d’un artiste en lunettes, colliers dorés, sur fond noir." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-02-400.webp" srcset="/studio124.be/assets/img/pf-02-400.webp 400w, /studio124.be/assets/img/pf-02-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Packshot pâtissier : des tartelettes aux framboises." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-03-400.webp" srcset="/studio124.be/assets/img/pf-03-400.webp 400w, /studio124.be/assets/img/pf-03-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait d’un homme en costume clair." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-04-400.webp" srcset="/studio124.be/assets/img/pf-04-400.webp 400w, /studio124.be/assets/img/pf-04-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Silhouette en contre-jour devant un halo orange." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-05-400.webp" srcset="/studio124.be/assets/img/pf-05-400.webp 400w, /studio124.be/assets/img/pf-05-636.webp 636w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Plat gastronomique dressé, photographié en lumière douce." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-06-400.webp" srcset="/studio124.be/assets/img/pf-06-400.webp 400w, /studio124.be/assets/img/pf-06-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait d’une jeune femme aux tresses, sur fond clair." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-07-400.webp" srcset="/studio124.be/assets/img/pf-07-400.webp 400w, /studio124.be/assets/img/pf-07-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait en lumière bleue et cyan, lunettes de soleil." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-08-400.webp" srcset="/studio124.be/assets/img/pf-08-400.webp 400w, /studio124.be/assets/img/pf-08-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Photo de mode : un modèle en robe noire sur fond blanc." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-09-400.webp" srcset="/studio124.be/assets/img/pf-09-400.webp 400w, /studio124.be/assets/img/pf-09-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait noir et blanc d’un homme au regard intense." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-10-400.webp" srcset="/studio124.be/assets/img/pf-10-400.webp 400w, /studio124.be/assets/img/pf-10-636.webp 636w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Assiette colorée photographiée pour un restaurant." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-11-400.webp" srcset="/studio124.be/assets/img/pf-11-400.webp 400w, /studio124.be/assets/img/pf-11-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Photo de mode en pied, tenue streetwear." loading="lazy" decoding="async"></li>
+          <li><img src="/studio124.be/assets/img/pf-12-400.webp" srcset="/studio124.be/assets/img/pf-12-400.webp 400w, /studio124.be/assets/img/pf-12-640.webp 640w" sizes="(max-width: 760px) 56vw, 300px" width="400" height="500" alt="Portrait d’une femme sur fond orange." loading="lazy" decoding="async"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= L’équipe ================= -->
+  <section class="sec equipe" id="equipe" aria-labelledby="equipe-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">L’équipe</p>
+        <h2 class="sec__title" id="equipe-title" data-lines>Vous n’êtes jamais seul<br><em>face à l’objectif.</em></h2>
+        <p class="sec__lede" data-reveal>Photographes, vidéastes, monteurs&nbsp;: une équipe passionnée vous accompagne, de la première idée au dernier clap.</p>
+      </header>
+      <ul class="team">
+        <li class="person" data-reveal><img src="/studio124.be/assets/img/equipe-mohamed-400.webp" srcset="/studio124.be/assets/img/equipe-mohamed-400.webp 400w, /studio124.be/assets/img/equipe-mohamed-640.webp 640w" sizes="(max-width: 760px) 44vw, 220px" width="400" height="500" alt="Mohamed Fellahi" loading="lazy" decoding="async"><h3>Mohamed Fellahi</h3><p>Fondateur</p></li>
+        <li class="person" data-reveal><img src="/studio124.be/assets/img/equipe-valentin-400.webp" srcset="/studio124.be/assets/img/equipe-valentin-400.webp 400w, /studio124.be/assets/img/equipe-valentin-640.webp 640w" sizes="(max-width: 760px) 44vw, 220px" width="400" height="500" alt="Valentin Louvrier" loading="lazy" decoding="async"><h3>Valentin Louvrier</h3><p>Photographe, vidéaste et monteur</p></li>
+        <li class="person" data-reveal><img src="/studio124.be/assets/img/equipe-gregory-400.webp" srcset="/studio124.be/assets/img/equipe-gregory-400.webp 400w, /studio124.be/assets/img/equipe-gregory-640.webp 640w" sizes="(max-width: 760px) 44vw, 220px" width="400" height="500" alt="Gregory Evrard" loading="lazy" decoding="async"><h3>Gregory Evrard</h3><p>Photographe et technicien plateau</p></li>
+        <li class="person" data-reveal><img src="/studio124.be/assets/img/equipe-khalil-400.webp" srcset="/studio124.be/assets/img/equipe-khalil-400.webp 400w, /studio124.be/assets/img/equipe-khalil-640.webp 640w" sizes="(max-width: 760px) 44vw, 220px" width="400" height="500" alt="Khalil Choua" loading="lazy" decoding="async"><h3>Khalil Choua</h3><p>Associé</p></li>
+        <li class="person" data-reveal><img src="/studio124.be/assets/img/equipe-karolina-400.webp" srcset="/studio124.be/assets/img/equipe-karolina-400.webp 400w, /studio124.be/assets/img/equipe-karolina-640.webp 640w" sizes="(max-width: 760px) 44vw, 220px" width="400" height="500" alt="Karolina Kielbasa" loading="lazy" decoding="async"><h3>Karolina Kielbasa</h3><p>Administration &amp; réservations</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= Et aussi ================= -->
+  <section class="sec plus" id="plus" aria-labelledby="plus-title">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Et aussi, au 124</p>
+        <h2 class="sec__title" id="plus-title" data-lines>Apprendre, tourner,<br><em>rester dormir.</em></h2>
+      </header>
+      <div class="extras">
+        <article class="extra" data-reveal>
+          <img src="/studio124.be/assets/img/atelier-cinema-400.webp" srcset="/studio124.be/assets/img/atelier-cinema-400.webp 400w, /studio124.be/assets/img/atelier-cinema-640.webp 640w" sizes="(max-width: 760px) 92vw, 25vw" width="400" height="500" alt="Affiche de l’atelier en immersion cinématographique du Studio 124." loading="lazy" decoding="async">
+          <div class="extra__body">
+            <svg class="extra__icon" aria-hidden="true"><use href="#i-film"/></svg>
+            <h3>Atelier cinéma</h3>
+            <p>De l’écriture du scénario à la projection publique&nbsp;: un court-métrage tourné en conditions réelles de studio.</p>
+            <a class="link-arrow" href="#contact" data-tab="devis" data-need="atelier" data-track="extra_atelier">S’inscrire<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+          </div>
+        </article>
+        <article class="extra" data-reveal>
+          <img src="/studio124.be/assets/img/formation-640.webp" srcset="/studio124.be/assets/img/formation-640.webp 640w, /studio124.be/assets/img/formation-1024.webp 1024w" sizes="(max-width: 760px) 92vw, 25vw" width="640" height="360" alt="Visuel des formations photo et logiciels Adobe du Studio 124." loading="lazy" decoding="async">
+          <div class="extra__body">
+            <svg class="extra__icon" aria-hidden="true"><use href="#i-school"/></svg>
+            <h3>Formations photo &amp; Adobe</h3>
+            <p>Théorie accélérée et pratique, Photoshop, Illustrator, After&nbsp;Effects. 10 participants maximum, ateliers de 3&nbsp;h.</p>
+            <a class="link-arrow" href="#contact" data-tab="devis" data-need="formation" data-track="extra_formation">Demander les dates<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+          </div>
+        </article>
+        <article class="extra" data-reveal>
+          <img src="/studio124.be/assets/img/appartement-640.webp" srcset="/studio124.be/assets/img/appartement-640.webp 640w, /studio124.be/assets/img/appartement-1024.webp 1024w" sizes="(max-width: 760px) 92vw, 25vw" width="640" height="427" alt="L’appartement du studio : lit, bureau, plantes et télévision." loading="lazy" decoding="async">
+          <div class="extra__body">
+            <svg class="extra__icon" aria-hidden="true"><use href="#i-bed"/></svg>
+            <h3>L’appartement · 35&nbsp;€/nuit</h3>
+            <p>Dans le même bâtiment, à deux pas de la gare du Nord. Réservé aux artistes, stagiaires et clients du studio.</p>
+            <a class="link-arrow" href="#contact" data-tab="devis" data-need="appartement" data-track="extra_appartement">Demander une nuit<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+          </div>
+        </article>
+        <article class="extra extra--text" data-reveal>
+          <div class="extra__body">
+            <svg class="extra__icon" aria-hidden="true"><use href="#i-star"/></svg>
+            <h3>Modèles &amp; casting</h3>
+            <p>Besoin de modèles, de figurants, de danseurs ou d’une maquilleuse&nbsp;? Le studio organise le casting avec la FB&nbsp;Agency, contrats compris.</p>
+            <a class="link-arrow" href="#contact" data-tab="devis" data-need="casting" data-track="extra_casting">En parler<svg aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Questions ================= -->
+  <section class="sec faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+      <header class="sec__head">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2 class="sec__title" id="faq-title" data-lines>Avant de<br><em>réserver.</em></h2>
+        <p class="sec__lede" data-reveal>Une autre question&nbsp;? Appelez le <a href="tel:+32472040501" data-phone data-track="phone_click"><span data-phone-label>0472&nbsp;04&nbsp;05&nbsp;01</span></a>, l’équipe répond jour et nuit.</p>
+      </header>
+      <div class="accordion" data-accordion>
+        <div class="qa"><h3><button type="button" aria-expanded="true" aria-controls="qa-1" id="qa-b1">Puis-je louer le studio sans photographe&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-1" role="region" aria-labelledby="qa-b1"><p>Oui. La location comprend le plateau, l’éclairage, les fonds et la loge. Le staff vous aide à installer le matériel et à changer les fonds&nbsp;; une assistance lumière dédiée est proposée en option (35&nbsp;€/h).</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-2" id="qa-b2">Quels sont les horaires&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-2" role="region" aria-labelledby="qa-b2"><p>Le studio est ouvert 24&nbsp;h/24 et 7&nbsp;j/7, uniquement sur rendez-vous. Pour une séance entre 20&nbsp;h et 8&nbsp;h, prévenez-nous au moins 24&nbsp;h à l’avance&nbsp;: elle peut être annulée si personne de l’équipe n’est disponible.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-3" id="qa-b3">Comment réserver et payer&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-3" role="region" aria-labelledby="qa-b3"><p>Envoyez votre demande (formulaire, téléphone ou <a href="https://booking.studio124.be/" target="_blank" rel="noopener">agenda en ligne</a>). Une fois le créneau validé, réglez par virement dans les 24&nbsp;h, avec votre nom et la date en communication. La réservation est confirmée par e-mail à réception du paiement.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-4" id="qa-b4">Puis-je annuler ou déplacer une réservation&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-4" role="region" aria-labelledby="qa-b4"><p>Une réservation confirmée est ferme et définitive&nbsp;: elle n’est ni annulable ni remboursable, car le créneau n’est plus proposé à la location. Vérifiez bien la date et l’heure avant de valider.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-5" id="qa-b5">Et si nous dépassons l’horaire&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-5" role="region" aria-labelledby="qa-b5"><p>Arrivez 15&nbsp;minutes avant le début de la séance pour vous installer. Tout dépassement de l’horaire convenu est compté comme une heure supplémentaire.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-6" id="qa-b6">Faites-vous des photos d’identité&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-6" role="region" aria-labelledby="qa-b6"><p>Non, le studio ne réalise pas de photos d’identité ni de passeport.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-7" id="qa-b7">Où se garer, comment venir&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-7" role="region" aria-labelledby="qa-b7"><p>Le studio est au 124 rue Verte à Schaerbeek, à deux pas de la gare du Nord. Parking sécurisé&nbsp;: Interparking, rue de Quatrecht&nbsp;38.</p></div></div>
+        <div class="qa"><h3><button type="button" aria-expanded="false" aria-controls="qa-8" id="qa-b8">Et si du matériel est abîmé&nbsp;?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3><div class="qa__a" id="qa-8" role="region" aria-labelledby="qa-b8"><p>Tout le matériel photo et vidéo est à votre disposition. En cas de casse ou de dégradation, le studio peut facturer la réparation ou le remplacement.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Réservation ================= -->
+  <section class="sec contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <header class="sec__head sec__head--center">
+        <p class="eyebrow">Réservation &amp; devis</p>
+        <h2 class="sec__title" id="contact-title" data-lines>Réservez<br><em>votre créneau.</em></h2>
+        <p class="sec__lede" data-reveal>Choisissez la formule et la date&nbsp;: le studio confirme le créneau et vous envoie les informations de paiement.</p>
+      </header>
+      <div class="booking">
+        <form class="form" id="contact-form" novalidate data-form>
+          <div class="tabs" role="tablist" aria-label="Type de demande" data-active="reservation">
+            <button type="button" role="tab" id="tab-reservation" aria-controls="panel-reservation" aria-selected="true" data-tab-btn="reservation">Réserver le studio</button>
+            <button type="button" role="tab" id="tab-devis" aria-controls="panel-devis" aria-selected="false" tabindex="-1" data-tab-btn="devis">Demander un devis</button>
+          </div>
+          <input type="hidden" name="form" value="reservation">
+
+          <div class="panel" id="panel-reservation" role="tabpanel" aria-labelledby="tab-reservation" data-panel="reservation">
+            <fieldset class="field">
+              <legend class="field__label">Formule</legend>
+              <div class="cards">
+                <label class="card"><input type="radio" name="session" value="location" checked><span><strong>Location du studio</strong><small>dès 55&nbsp;€/h</small></span></label>
+                <label class="card"><input type="radio" name="session" value="photo"><span><strong>Shooting photo</strong><small>dès 250&nbsp;€/h</small></span></label>
+                <label class="card"><input type="radio" name="session" value="video"><span><strong>Production vidéo</strong><small>dès 250&nbsp;€/h</small></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <legend class="field__label">Durée</legend>
+              <div class="pills">
+                <label class="pill"><input type="radio" name="duree" value="2" checked><span>2&nbsp;h</span></label>
+                <label class="pill"><input type="radio" name="duree" value="3"><span>3&nbsp;h</span></label>
+                <label class="pill"><input type="radio" name="duree" value="4"><span>Demi-journée · 4&nbsp;h</span></label>
+                <label class="pill"><input type="radio" name="duree" value="8"><span>Journée · 8&nbsp;h</span></label>
+              </div>
+            </fieldset>
+            <div class="row">
+              <div class="field">
+                <label class="field__label" for="f-date">Date souhaitée <span aria-hidden="true">*</span></label>
+                <input class="input" id="f-date" name="date" type="date" required aria-describedby="err-date">
+                <p class="field__error" id="err-date" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-heure">Heure de début</label>
+                <select class="input" id="f-heure" name="heure" data-hours-select></select>
+              </div>
+            </div>
+            <fieldset class="field">
+              <legend class="field__label">Options</legend>
+              <div class="checks">
+                <label class="check"><input type="checkbox" name="assistance" value="1"><span>Assistance lumière dédiée <small data-assist-price>+35&nbsp;€/h</small></span></label>
+                <label class="check" data-when="photo" hidden><input type="checkbox" name="retouche" value="1"><span>Retouche photo <small>5&nbsp;€ par photo</small></span></label>
+                <label class="check" data-when="video" hidden><input type="checkbox" name="montage" value="1"><span>Montage vidéo <small>sur devis</small></span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="panel" id="panel-devis" role="tabpanel" aria-labelledby="tab-devis" data-panel="devis" hidden>
+            <fieldset class="field">
+              <legend class="field__label">Votre besoin <span aria-hidden="true">*</span></legend>
+              <div class="pills pills--wrap">
+                <label class="pill"><input type="radio" name="besoin" value="photo" checked><span>Production photo</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="video"><span>Production vidéo</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="graphisme"><span>Communication visuelle</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="atelier"><span>Atelier cinéma</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="formation"><span>Formation</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="casting"><span>Modèles &amp; casting</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="appartement"><span>Appartement</span></label>
+                <label class="pill"><input type="radio" name="besoin" value="autre"><span>Autre</span></label>
+              </div>
+            </fieldset>
+            <div class="row">
+              <div class="field">
+                <label class="field__label" for="f-quand">Pour quand&nbsp;?</label>
+                <input class="input" id="f-quand" name="quand" type="text" maxlength="80" placeholder="ex. mi-novembre, avant le lancement…">
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-budget">Budget estimé</label>
+                <select class="input" id="f-budget" name="budget">
+                  <option value="">Je ne sais pas encore</option>
+                  <option>Moins de 500 €</option>
+                  <option>500 – 1 500 €</option>
+                  <option>1 500 – 5 000 €</option>
+                  <option>Plus de 5 000 €</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label class="field__label" for="f-name">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input class="input" id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="err-name">
+              <p class="field__error" id="err-name" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-societe">Société <small>(facultatif)</small></label>
+              <input class="input" id="f-societe" name="societe" type="text" autocomplete="organization" maxlength="80">
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label class="field__label" for="f-email">E-mail <span aria-hidden="true">*</span></label>
+              <input class="input" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="vous@entreprise.be" aria-describedby="err-email">
+              <p class="field__error" id="err-email" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-phone">Téléphone <span aria-hidden="true" data-phone-required>*</span></label>
+              <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="+32 4xx xx xx xx" aria-describedby="err-phone">
+              <p class="field__error" id="err-phone" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="f-message">Votre projet</label>
+            <textarea class="input" id="f-message" name="message" rows="4" maxlength="2000" placeholder="Type de séance, nombre de personnes, fond souhaité, matériel particulier…" aria-describedby="err-message"></textarea>
+            <p class="field__error" id="err-message" aria-live="polite"></p>
+          </div>
+          <!-- Anti-spam : champ invisible pour les humains -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-website">Ne pas remplir</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <label class="check check--consent">
+            <input type="checkbox" name="consent" value="1" required aria-describedby="err-consent">
+            <span>J’accepte que Studio 124 utilise ces informations pour répondre à ma demande. <a href="/studio124.be/confidentialite.html">Confidentialité</a></span>
+          </label>
+          <p class="field__error" id="err-consent" aria-live="polite"></p>
+          <p class="form__error" role="alert" data-form-error></p>
+          <button class="btn btn--accent btn--lg btn--block form__submit" type="submit" data-submit><span class="form__label">Envoyer ma demande</span><span class="spinner" aria-hidden="true"></span></button>
+          <p class="form__note"><svg aria-hidden="true"><use href="#i-check"/></svg>Sans engagement tant que le studio n’a pas confirmé le créneau.</p>
+
+          <div class="success" tabindex="-1" hidden data-form-success>
+            <svg class="success__icon" aria-hidden="true"><use href="#i-aperture"/></svg>
+            <p class="success__title">C’est dans la boîte<span data-success-name></span>&nbsp;!</p>
+            <p data-success-text>Le studio vous recontacte pour confirmer le créneau.</p>
+            <button class="btn btn--line" type="button" data-form-reset>Envoyer une autre demande</button>
+          </div>
+        </form>
+
+        <aside class="estimate" aria-labelledby="estimate-title" data-estimate>
+          <div class="estimate__card">
+            <p class="eyebrow" id="estimate-title">Votre estimation</p>
+            <p class="estimate__total" aria-live="polite"><span data-est-total>130&nbsp;€</span></p>
+            <ul class="estimate__lines" data-est-lines></ul>
+            <p class="estimate__note" data-est-note>Tarifs indicatifs, confirmés par le studio après examen du projet.</p>
+          </div>
+          <div class="direct">
+            <p class="direct__title">Plutôt en direct&nbsp;?</p>
+            <a class="direct__row" href="tel:+32472040501" data-phone data-track="phone_click"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><strong data-phone-label>0472&nbsp;04&nbsp;05&nbsp;01</strong><small class="status" data-phone-status></small></span></a>
+            <a class="direct__row" href="https://wa.me/32472040501" target="_blank" rel="noopener" data-track="whatsapp_click"><svg aria-hidden="true"><use href="#i-chat"/></svg><span><strong>WhatsApp</strong><small>Réponse par message</small></span></a>
+            <a class="direct__row" href="https://booking.studio124.be/" target="_blank" rel="noopener" data-track="booking_click"><svg aria-hidden="true"><use href="#i-calendar"/></svg><span><strong>Agenda en ligne</strong><small>Voir les disponibilités</small></span></a>
+            <a class="direct__row" href="mailto:ceicrpasbl@gmail.com" data-track="email_click"><svg aria-hidden="true"><use href="#i-mail"/></svg><span><strong>ceicrpasbl@gmail.com</strong><small>Devis et questions</small></span></a>
+            <a class="direct__row" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+Verte+124+1030+Schaerbeek" target="_blank" rel="noopener" data-track="directions"><svg aria-hidden="true"><use href="#i-pin"/></svg><span><strong>Rue Verte 124, Schaerbeek</strong><small>Gare du Nord · parking rue de Quatrecht 38</small></span></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!--#include footer-->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__cta" data-reveal>
+      <p class="ftr__claim">Votre prochaine image<br><em>commence ici.</em></p>
+      <div class="ftr__actions">
+        <a class="btn btn--accent btn--lg" href="/studio124.be/#contact" data-tab="reservation" data-track="cta_footer">Réserver un créneau<svg class="btn__icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        <a class="btn btn--line btn--lg" href="tel:+32472040501" data-phone data-track="phone_click"><svg class="btn__icon" aria-hidden="true"><use href="#i-phone"/></svg>Appeler le studio</a>
+      </div>
+    </div>
+    <div class="ftr__grid">
+      <div class="ftr__col">
+        <h2 class="ftr__title">Le studio</h2>
+        <p>Rue Verte 124<br>1030 Schaerbeek · Bruxelles</p>
+        <p class="ftr__small">À deux pas de la gare du Nord.<br>Parking&nbsp;: Interparking, rue de Quatrecht&nbsp;38.</p>
+        <a class="ftr__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue+Verte+124+1030+Schaerbeek" target="_blank" rel="noopener" data-track="directions">Itinéraire<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+      </div>
+      <div class="ftr__col">
+        <h2 class="ftr__title">Horaires</h2>
+        <ul class="hours">
+          <li><span>Studio</span><span>24&nbsp;h/24, 7&nbsp;j/7</span></li>
+          <li><span>Sur rendez-vous</span><span>uniquement</span></li>
+          <li><span>Ligne de jour</span><span>9&nbsp;h – 18&nbsp;h</span></li>
+          <li><span>Ligne de soirée</span><span>18&nbsp;h – 9&nbsp;h</span></li>
+        </ul>
+        <p class="status" data-phone-status></p>
+      </div>
+      <div class="ftr__col">
+        <h2 class="ftr__title">Contact</h2>
+        <ul class="ftr__list">
+          <li><a href="tel:+32472040501" data-track="phone_click"><svg aria-hidden="true"><use href="#i-phone"/></svg>+32&nbsp;472&nbsp;04&nbsp;05&nbsp;01 <small>(jour)</small></a></li>
+          <li><a href="tel:+32472500890" data-track="phone_night_click"><svg aria-hidden="true"><use href="#i-moon"/></svg>+32&nbsp;472&nbsp;50&nbsp;08&nbsp;90 <small>(soir)</small></a></li>
+          <li><a href="https://wa.me/32472040501" target="_blank" rel="noopener" data-track="whatsapp_click"><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a></li>
+          <li><a href="mailto:ceicrpasbl@gmail.com" data-track="email_click"><svg aria-hidden="true"><use href="#i-mail"/></svg>ceicrpasbl@gmail.com</a></li>
+        </ul>
+        <div class="ftr__social">
+          <a href="https://www.instagram.com/studio124.be/" target="_blank" rel="noopener" aria-label="Instagram @studio124.be" data-track="instagram_click"><svg aria-hidden="true"><use href="#i-insta"/></svg></a>
+          <a href="https://www.tiktok.com/@ceicrp_asbl" target="_blank" rel="noopener" aria-label="TikTok @ceicrp_asbl" data-track="tiktok_click"><svg aria-hidden="true"><use href="#i-tiktok"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=100065029682880" target="_blank" rel="noopener" aria-label="Facebook Studio 124" data-track="facebook_click"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
+      <div class="ftr__col">
+        <h2 class="ftr__title">Le site</h2>
+        <ul class="ftr__list">
+          <li><a href="/studio124.be/#tarifs">Tarifs</a></li>
+          <li><a href="https://booking.studio124.be/" target="_blank" rel="noopener" data-track="booking_click">Agenda en ligne<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a></li>
+          <li><a href="/studio124.be/confidentialite.html" data-page-link="confidentialite">Confidentialité (RGPD)</a></li>
+          <li><a href="/studio124.be/cgu.html" data-page-link="cgu">Conditions &amp; mentions légales</a></li>
+          <li><button class="ftr__btn" type="button" data-cookie-open>Gérer les cookies</button></li>
+          <li><button class="ftr__btn" type="button" data-motion-toggle>Réduire les animations</button></li>
+          <li><button class="ftr__btn" type="button" data-sound-mute hidden>Couper le son</button></li>
+        </ul>
+      </div>
+    </div>
+    <svg class="ftr__word" aria-hidden="true" data-reveal><use href="#logo"/></svg>
+    <div class="ftr__bottom">
+      <p>© <span data-year>2026</span> Studio 124 · un projet du CEICRP ASBL, actif à Bruxelles depuis 1988 · BE&nbsp;0435.720.436</p>
+      <p class="demo-note">Maquette de démonstration, à valider avec le studio.</p>
+    </div>
+  </div>
+</footer>
+<div class="dock" data-dock>
+  <a class="dock__call" href="tel:+32472040501" data-phone data-track="phone_click"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Appeler</span></a>
+  <a class="btn btn--accent dock__cta" href="/studio124.be/#contact" data-tab="reservation" data-track="cta_dock">Réserver un créneau</a>
+</div>
+<!--/include-->
+<!--#include cookie-->
+<div class="cookie" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-text" hidden data-cookie>
+  <div data-cookie-main>
+    <p class="cookie__title" id="cookie-title"><svg aria-hidden="true"><use href="#i-aperture"/></svg>Un mot sur les cookies.</p>
+    <p class="cookie__text" id="cookie-text">Aucun cookie publicitaire. Avec votre accord seulement, nous mesurons l’audience de façon anonyme pour améliorer le site. <a href="/studio124.be/confidentialite.html#cookies">En savoir plus</a></p>
+    <div class="cookie__actions">
+      <button class="btn btn--sm btn--line" type="button" data-consent="refuse">Tout refuser</button>
+      <button class="btn btn--sm btn--ghost" type="button" data-consent="customize" aria-expanded="false">Personnaliser</button>
+      <button class="btn btn--sm btn--line" type="button" data-consent="accept">Tout accepter</button>
+    </div>
+  </div>
+  <div data-cookie-prefs hidden>
+    <p class="cookie__title">Vos préférences</p>
+    <div class="cookie__row">
+      <div><p class="cookie__row-title">Nécessaires</p><p class="cookie__row-text">Mémorisent vos choix (cookies, animations, son). Toujours actifs.</p></div>
+      <span class="switch switch--locked" aria-hidden="true"><span></span></span>
+    </div>
+    <div class="cookie__row">
+      <div><p class="cookie__row-title" id="c-analytics-label">Mesure d’audience</p><p class="cookie__row-text" id="c-analytics-text">Statistiques anonymes (Google Analytics&nbsp;4, sans publicité, 13&nbsp;mois maximum).</p></div>
+      <label class="switch"><input type="checkbox" role="switch" aria-labelledby="c-analytics-label" aria-describedby="c-analytics-text" data-consent-analytics><span></span></label>
+    </div>
+    <div class="cookie__actions">
+      <button class="btn btn--sm btn--line" type="button" data-consent="refuse">Tout refuser</button>
+      <button class="btn btn--sm btn--accent" type="button" data-consent="save">Enregistrer</button>
+    </div>
+  </div>
+</div>
+<!--/include-->
+
+<div class="flash" aria-hidden="true" data-flash></div>
+<svg class="iris" aria-hidden="true" data-iris></svg>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Contact: mailto:ceicrpasbl@gmail.com
+Expires: 2027-10-01T00:00:00.000Z
+Preferred-Languages: fr, nl, en
+Canonical: https://michprk.github.io/studio124.be/.well-known/security.txt

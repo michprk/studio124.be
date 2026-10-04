@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /studio124.be/partials/
+Disallow: /studio124.be/scripts/
+Disallow: /studio124.be/api/
+
+Sitemap: https://michprk.github.io/studio124.be/sitemap.xml

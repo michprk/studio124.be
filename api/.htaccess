@@ -1,0 +1,10 @@
+# Le dossier .data (compteur anti-spam) n’est jamais accessible depuis le web
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^\.data(/|$) - [F,L]
+</IfModule>
+
+# Les fichiers de configuration du Worker Cloudflare n’ont rien à faire en ligne
+<FilesMatch "\.(toml|md|json)$">
+  Require all denied
+</FilesMatch>

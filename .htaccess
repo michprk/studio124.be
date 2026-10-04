@@ -1,0 +1,71 @@
+# ==========================================================================
+# Studio 124 — configuration serveur Apache / LiteSpeed (Hostinger, OVH, one.com…)
+# À utiliser quand le site est hébergé à la racine du nom de domaine (studio124.be).
+# ==========================================================================
+
+# 1. Forcer le HTTPS et une seule adresse (sans « www »)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+  # Formulaire : /api/contact → api/contact.php (hébergement avec PHP)
+  RewriteRule ^api/contact/?$ api/contact.php [L]
+
+  # 2. Liens cassés : les anciennes adresses du site Wix de studio124.be
+  #    mènent à la bonne section au lieu d’une erreur
+  RewriteRule ^(mat%C3%A9riel|matériel|materiel)/?$ /#materiel [R=301,NE,L]
+  RewriteRule ^(tarifs|tarifs-old|tarifs-et-reservations|booking-calendar|services-5|services-8|online-ordering)/?$ /#tarifs [R=301,NE,L]
+  RewriteRule ^(services-1)/?$ /#plus [R=301,NE,L]
+  RewriteRule ^(services-3|services-4|general-clean)/?$ /#plus [R=301,NE,L]
+  RewriteRule ^(galerie|graphisme|nos-guest|portfolio)(/.*)?$ /#realisations [R=301,NE,L]
+  RewriteRule ^(about-1-1|about-1|about-3|about-4|gr%C3%A9gory|grégory|daphn%C3%A9|daphné)/?$ /#equipe [R=301,NE,L]
+  RewriteRule ^(contact|copie-de-contact)/?$ /#contact [R=301,NE,L]
+  RewriteRule ^(copie-de-le-studio|copie-de-accueil|en)/?$ / [R=301,L]
+  RewriteRule ^(mentions-l%C3%A9gales|mentions-légales)/?$ /cgu.html [R=301,L]
+  RewriteRule ^(politique-de-confidentialit%C3%A9|politique-de-confidentialité|politique-en-mati%C3%A8re-de-cookies|politique-en-matière-de-cookies)/?$ /confidentialite.html [R=301,L]
+
+  # Les blocs communs et scripts de construction n’ont rien à faire en ligne
+  RewriteRule ^(partials|scripts)(/|$) - [F,L]
+</IfModule>
+
+# 3. Page 404 personnalisée
+ErrorDocument 404 /404.html
+
+# 4. En-têtes de sécurité
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-BHzmaxSLOPJ4bxA1teFNFVyRPJM2dd7IsWC4Xd9y/s0=' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.workers.dev; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+</IfModule>
+
+# 5. Cache : longues durées pour les fichiers qui changent rarement (CSS/JS versionnés ?v=…)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+</IfModule>
+
+# 6. Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript image/svg+xml application/manifest+json application/xml text/plain
+</IfModule>
+
+AddType application/manifest+json .webmanifest
+AddType font/woff2 .woff2
+AddType image/webp .webp
+AddType text/javascript .js .mjs
